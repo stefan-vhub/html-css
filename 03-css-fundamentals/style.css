@@ -1,5 +1,10 @@
-h1, h2, h3, h4, p, li {
+body {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1, h2, h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -31,6 +36,10 @@ li {
   font-size: 20px;
 }
 
+.main-header {
+  background-color: #f7f7f7;
+}
+
 header p {
   font-style: italic;
 }
@@ -40,9 +49,19 @@ header p {
   font-size: 18px;
 }
 
+.related {
+  list-style: none;
+}
+
 .related-author {
   font-size: 18px;
   font-weight: bold;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
 }
 
 #copyright {
@@ -51,4 +70,38 @@ header p {
 
 footer p {
   font-size: 16px;
+}
+
+/* .first-list {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  /* color: red; */
+}
+
+/* Misconecption this won't work! */
+article p:first-child {
+  color: red;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
 }
